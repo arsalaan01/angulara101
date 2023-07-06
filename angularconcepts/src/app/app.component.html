@@ -1,0 +1,12 @@
+<div class="alert alert-success" role="alert">
+  {{title}}
+</div>
+
+<button class="btn btn-primary" [disabled]="!activateButton" (click)="onEventCall()">Hello Property binding</button>
+<br><br>
+<div class="alert alert-primary">{{eventBinding}}</div>
+
+<br>
+
+<input type="text" class="form-control" [(ngModel)]="twoWayBinding">
+<p>{{twoWayBinding}}</p>

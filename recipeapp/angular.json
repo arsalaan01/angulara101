@@ -1,12 +1,9 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "49e53759-c4db-441c-a74c-8282d8330dde"
-  },
+  "$schema": "../routing-start/node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "recipeapp": {
+    "first-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/recipeapp",
+            "outputPath": "dist/first-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "recipeapp:build:production"
+              "browserTarget": "first-app:build:production"
             },
             "development": {
-              "browserTarget": "recipeapp:build:development"
+              "browserTarget": "first-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "recipeapp:build"
+            "browserTarget": "first-app:build"
           }
         },
         "test": {
@@ -102,5 +99,7 @@
       }
     }
   },
-  "defaultProject": "recipeapp"
+  "cli": {
+    "analytics": "a483a5cc-44d0-4ee3-8a61-bada97331b8c"
+  }
 }
